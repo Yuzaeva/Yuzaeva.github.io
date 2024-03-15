@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Учебный проект lifeFitness</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="./index.html" class="logo"
+          ><img
+            src="./public/images/life-fitness.png"
+            alt="lifeFitness"
+            class="logo"
+        /></a>
+        <ul class="navbar-menu">
+          <li>
+            <select>
+              <option value="" selected>Студия</option>
+              <option value="Kazan">
+                <img
+                  src="./public/images/point.png"
+                  alt="point"
+                  class="point"
+                />
+                Казань
+              </option>
+              <option value="Ufa">
+                <img
+                  src="./public/images/point.png"
+                  alt="point"
+                  class="point"
+                />Уфа
+              </option>
+              <option value="Chel">
+                <img
+                  src="./public/images/point.png"
+                  alt="point"
+                  class="point"
+                />Челябинск
+              </option>
+              <option value="Voronez">
+                <img
+                  src="./public/images/point.png"
+                  alt="point"
+                  class="point"
+                />Воронеж
+              </option>
+            </select>
+          </li>
+          <li><a href="./pages/about.html">О нас</a></li>
+          <li><a href="./pages/staff.html">Сотрудники</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="./pages/contacts.html">Контакты</a></li>
+        </ul>
+        <input type="checkbox" id="navbar-toggle" class="navbar-toggle" />
+        <label for="navbar-toggle" class="navbar-burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </label>
+        <img
+          class="header-search"
+          src="./public/images/glass.svg"
+          alt="search"
+        />
+      </nav>
+    </header>
+    <main class="main">
+      <section class="personal">
+        <button class="personal__btn"onclick="openPopup()">Запись</button>
+        <div class="popup" id="popup">
+          <button class="popup__close" onclick="closePopup()">Закрыть</button>
+          <div class="container">
+            <div class="left-column">
+              <h2>ЭТО - ВРЕМЯ <br> ВАШЕГО СТАРТА</h2>
+              <p>Первая тренировка за 490 Р</p>
+            </div>
+            <div class="right-column">
+              <form>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Номер телефона:</label>
+                <input type="text" id="phone" name="phone" required>
+                <div class="form-wrap">
+                  <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                  <label>Согласие с политикой конфиденциальности</label>
+                </div>
+                <button type="submit">Забронировать</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="only">
+        <h3 class="only__title">Только у нас</h3>
+        <div class="only-circles">
+          <div class="only-circle">
+            <img src="./public/images/only-1.png" alt="icon" class="only-circle__img" />
+            <p class="only-circle__desc">персональные <br> тренировки</p>
+          </div>
+          <div class="only-circle">
+            <img src="./public/images/only-2.png" alt="icon" class="only-circle__img" />
+            <p class="only-circle__desc">силовые <br>тренировки</p>
+          </div>
+          <div class="only-circle">
+            <img src="./public/images/only-3.png" alt="icon" class="only-circle__img" />
+            <p class="only-circle__desc">сайкл<br>-тренировка</p>
+          </div>
+          <div class="only-circle">
+            <img src="./public/images/only-4.png" alt="icon" class="only-circle__img" />
+            <p class="only-circle__desc">спортивное <br>питание</p>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="advantages">
+        <div class="column left">
+          <ul class="column-left-titles">
+            <li>о клубе</li>
+            <li>тренажерный зал</li>
+            <li>групповые программы</li>
+            <li>сайкл студия</li>
+            <li>студия йоги</li>
+            <li>бассейн</li>
+            <li>зал боевых искусств</li>
+            <li>акции</li>
+          </ul>
+        </div>
+        <div class="column right">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <h3>Силовые тренировки</h3>
+                  <p>
+                    Регулярные силовые тренировки увеличивают размер и силу
+                    мышечных волокон. Они также укрепляют сухожилия, связки и
+                    кости. Все эти изменения положительно влияют на физическое
+                    состояние, внешний вид и метаболизм, одновременно снижая
+                    риск заболеваний суставов и мышечных болей.
+                  </p>
+                  <img src="./public/images/main.png" alt="Image 1" />
+                </li>
+                <li class="glide__slide">
+                  <h3>Тренажерный зал</h3>
+                  <p>
+                    Регулярные силовые тренировки увеличивают размер и силу
+                    мышечных волокон. Они также укрепляют сухожилия, связки и
+                    кости. Все эти изменения положительно влияют на физическое
+                    состояние, внешний вид и метаболизм, одновременно снижая
+                    риск заболеваний суставов и мышечных болей.
+                  </p>
+                  <img src="./public/images/main.png" alt="Image 1" />
+                </li>
+                <li class="glide__slide">
+                  <h3>Групповые тренировки</h3>
+                  <p>
+                    Регулярные силовые тренировки увеличивают размер и силу
+                    мышечных волокон. Они также укрепляют сухожилия, связки и
+                    кости. Все эти изменения положительно влияют на физическое
+                    состояние, внешний вид и метаболизм, одновременно снижая
+                    риск заболеваний суставов и мышечных болей.
+                  </p>
+                  <img src="./public/images/main.png" alt="Image 1" />
+                </li>
+                <li class="glide__slide">
+                  <h3>Сайкл студия</h3>
+                  <p>
+                    Регулярные силовые тренировки увеличивают размер и силу
+                    мышечных волокон. Они также укрепляют сухожилия, связки и
+                    кости. Все эти изменения положительно влияют на физическое
+                    состояние, внешний вид и метаболизм, одновременно снижая
+                    риск заболеваний суставов и мышечных болей.
+                  </p>
+                  <img src="./public/images/main.png" alt="Image 1" />
+                </li>
+                <li class="glide__slide">
+                  <h3>Студия йоги</h3>
+                  <p>
+                    Регулярные силовые тренировки увеличивают размер и силу
+                    мышечных волокон. Они также укрепляют сухожилия, связки и
+                    кости. Все эти изменения положительно влияют на физическое
+                    состояние, внешний вид и метаболизм, одновременно снижая
+                    риск заболеваний суставов и мышечных болей.
+                  </p>
+                  <img src="./public/images/main.png" alt="Image 1" />
+                </li>
+                <li class="glide__slide">
+                  <h3>Бассейн</h3>
+                  <p>
+                    Регулярные силовые тренировки увеличивают размер и силу
+                    мышечных волокон. Они также укрепляют сухожилия, связки и
+                    кости. Все эти изменения положительно влияют на физическое
+                    состояние, внешний вид и метаболизм, одновременно снижая
+                    риск заболеваний суставов и мышечных болей.
+                  </p>
+                  <img src="./public/images/main.png" alt="Image 1" />
+                </li>
+                <li class="glide__slide">
+                  <h3>зал боевых искусств</h3>
+                  <p>
+                    Регулярные силовые тренировки увеличивают размер и силу
+                    мышечных волокон. Они также укрепляют сухожилия, связки и
+                    кости. Все эти изменения положительно влияют на физическое
+                    состояние, внешний вид и метаболизм, одновременно снижая
+                    риск заболеваний суставов и мышечных болей.
+                  </p>
+                  <img src="./public/images/main.png" alt="Image 1" />
+                </li>
+                <li class="glide__slide">
+                  <h3>Акции</h3>
+                  <p>
+                    Регулярные силовые тренировки увеличивают размер и силу
+                    мышечных волокон. Они также укрепляют сухожилия, связки и
+                    кости. Все эти изменения положительно влияют на физическое
+                    состояние, внешний вид и метаболизм, одновременно снижая
+                    риск заболеваний суставов и мышечных болей.
+                  </p>
+                  <img src="./public/images/main.png" alt="Image 1" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="offers">
+        <button class="offers__btn">Предложения месяца</button>
+        <div class="offers-cards">
+          <div class="offers-cards-card">
+            <div class="offers-cards-card-wrap">
+            <img src="./public/images/offer-1.png" alt="#" class="offers-cards-card-wrap__img" />
+            <p class="offers-cards-card-wrap__title">
+              БЕЗЛИМИТНЫЕ 6 МЕСЯЦЕВ +45 ДНЕЙ ЗАМОРОЗКИ
+            </p>
+          </div>
+            <button class="offers-cards-card__btn">Узнать цену</button>
+          </div>
+          <div class="offers-cards-card">
+            <div class="offers-cards-card-wrap">
+            <img src="./public/images/offer-2.png" alt="" class="offers-cards-card-wrap__img" />
+            <p class="offers-cards-card-wrap__title">
+              БЕЗЛИМИТНЫЕ 9 МЕСЯЦЕВ +90 ДНЕЙ ЗАМОРОЗКИ
+            </p>
+            </div>
+            <button class="offers-cards-card__btn">Узнать цену</button>
+          </div>
+          <div class="offers-cards-card">
+            <div class="offers-cards-card-wrap">
+            <img src="./public/images/offer-3.png" alt="" class="offers-cards-card-wrap__img" />
+            <p class="offers-cards-card-wrap__title">
+              БЕЗЛИМИТНЫЕ 12 МЕСЯЦЕВ+90 ДНЕЙ ЗАМОРОЗКИ
+            </p>
+            </div>
+            <button class="offers-cards-card__btn">Узнать цену</button>
+          </div>
+        </div>
+      </section>
+      <section class="trial">
+        <h2 class="trial__title">Пробная тренировка</h2>
+        <div class="trial-column">
+          <div class="trial-column-left">
+            <p class="trial__desc">Ваш номер телефона</p>
+            <input
+              type="tel"
+              class="trial__input"
+              placeholder="Ваш Номер телефона"
+            />
+            <p class="trial__desc">Желаемое время тренировки</p>
+            <input
+              type="date"
+              class="trial__input"
+              placeholder="Желаемое время тренировки"
+            />
+          </div>
+          <div class="trial-column-right">
+            <p class="trial-column-right__desc">
+              оставьте нам заявку и наш специалист свяжется с вами в ближайшее
+              время
+            </p>
+            <button class="trial__btn">Заказать абонемент</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <a href="#home" class="footer-top__link">Home</a>
+        <a href="#about" class="footer-top__link">About</a>
+        <a href="#" class="footer-top__link logo"
+          ><img
+            src="./public/images/life-fitness.png"
+            alt="lifeFitness"
+            class="logo"
+        /></a>
+        <a href="#Services" class="footer-top__link">Service</a>
+        <a href="#blog" class="footer-top__link">Blog</a>
+      </div>
+      <div class="footer-bottom">
+        <img src="./public/images/wa.png" alt="whatsapp" class="footer-bottom__img" />
+        <img src="./public/images/tg.png" alt="telegram" class="footer-bottom__img" />
+        <img src="./public/images/inst.svg" alt="instagram" class="footer-bottom__img" />
+        <img src="./public/images/you.svg" alt="youtube" class="footer-bottom__img" />
+        <img src="./public/images/pint.svg" alt="pinterest" class="footer-bottom__img" />
+      </div>
+      <p class="footer__desc">Юзаева Дарья, <br />311-22</p>
+    </footer>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+      new Glide('.glide').mount();
+    </script>
+  </body>
+</html>
